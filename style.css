@@ -1,0 +1,102 @@
+*{
+    padding: 0;
+    margin:0;
+    font-family: 'Poppins';
+}
+.fundo{
+    width: 1440px;
+    height: 1024px;
+    background-image: url(img/Background-img.svg); 
+    background-size: cover;    
+}
+.card{
+    display: flex;
+    width: 1060px;
+    height: 696px;
+    bottom: 161px;
+    margin-left: 190px;
+    border-radius: 16px;
+    background-color: white;
+}
+.row{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 40px;
+    
+}
+.inputbox{
+    display: flex;
+    flex-direction: column-reverse;
+    position: relative;
+    height: 40px;
+    
+}
+.menu{
+    text-align: center;
+    background-color: #23226B;
+    width: 390px;
+    height: 697px;
+    top:160px;
+    left: 178px;
+    color: white;
+    border-radius: 16px 0px 0px 16px;
+
+}
+.menu h1{
+    position: absolute;
+    width: 200.74px;
+    height: 46.62px;
+    left: 286.97px;
+    top: 232.68px;
+    text-align: start;
+    font-size: 24px;
+}
+.menu h4{
+    position: absolute;
+    width: 181.24px;
+    height: 45.46px;
+    left: 286.97px;
+    top: 327.08px;
+    text-align: start;
+    font-size: 14px;
+}
+.menu button{  
+    position: absolute;
+    width: 181.24px;
+    height: 65.27px;
+    left: 281.24px;
+    top: 402.83px;
+}
+.menu h6{ 
+    position: absolute;
+    width: 130px;
+    height: 18px;
+    left: 303px;
+    top: 474px;
+    font-size: 12px;
+}
+.formulario{
+    display: flex;
+    text-align: center;
+    margin-top: 38px;
+    font-size: 24px;
+    color: #23226B;
+    margin-left: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    
+}
+.row button{
+    justify-self: center;
+    width: 200px;
+    height: 50px;
+    border:none;
+    outline: none;
+    cursor: pointer;
+    background-color: #23226B;
+    font-size: 20px;
+    font-weight: bold;
+}
