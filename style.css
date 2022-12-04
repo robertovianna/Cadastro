@@ -1,129 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:ital,wght@0,200;0,300;1,200;1,300;1,500&family=Roboto:ital,wght@0,400;0,500;1,400;1,500;1,700&display=swap');
 *{
     padding: 0;
     margin:0;
-    font-family: 'Poppins';
     box-sizing: border-box;
 }
 .fundo{
-    width: 1440px;
-    height: 1024px;
-    background-image: url(img/Background-img.svg); 
-    background-size: cover;    
-}
-.card{
     display: flex;
     align-items: center;
-    width: 1060px;
-    height: 696px;
-    bottom: 161px;
-    margin-left: 190px;
-    border-radius: 16px;
-    background-color: white;
-}
-.formulario{
-    flex-grow: 3;
-    display: flex;
-    text-align: start;
-    width: 80%;
-    flex-direction: column;
     justify-content: center;
-    min-height: 100vh;
-    padding: 20px;
-    gap: 10px;
-    font-size: 24px;
-    color: #7C7C7C;
+    background-image: url(img/Background-img.svg); 
+    background-size: cover;
+    height: 100vh;  
 }
-.formulario h2{
-    position: absolute;
-    color: #23226B;
-    top: 38px;
-    left: 720px;
-
-    
-}
-.row{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 40px;
-    
-}
-.inputbox{
+#card{
     display: flex;
-    flex-direction: column-reverse;
-    position: relative;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center; 
 }
-.inputbox input{
-    display: flex;
-    position: relative;
-    height: 34px;
-    border: none;
-    background-color: #EAEAEA;
-}
-.inputbox label{
-    font-size: 14px;
-}
-.menu{
+#card-bem-vindo{
+    background-color: #23226B;
+    border-radius: 16px 0 0 16px;
+    color: white;
+    height: 95vh;
+}  
+#menu{
+    margin-top: 80%;
     text-align: center;
-    background-color: #23226B;
-    width: 390px;
-    height: 697px;
-    top:160px;
-    left: 178px;
-    color: white;
-    border-radius: 16px 0px 0px 16px;
-
 }
-.menu h1{
-    position: absolute;
-    width: 200.74px;
-    height: 46.62px;
-    left: 286.97px;
-    top: 232.68px;
-    text-align: start;
+#menu h1{
     font-size: 24px;
-}
-.menu h4{
-    position: absolute;
-    width: 181.24px;
-    height: 45.46px;
-    left: 286.97px;
-    top: 327.08px;
-    text-align: start;
+    font-weight: 900;   
+} 
+#menu h4{
+    margin-top: 30px;
     font-size: 14px;
+    font-weight: 500;
 }
-.menu button{  
-    position: absolute;
-    width: 181.24px;
-    height: 65.27px;
-    left: 281.24px;
-    top: 402.83px;
-    font-weight: 800;
-    font-size: 14px;
-    border-radius: 16px;
-    border: 2px solid  white;
-    background-color: #23226B;
+#menu .btn-entrar{
+    margin-top: 30px;
+    width: 170px;
+    height: 60px;
     color: white;
+    background-color: #23226B;
+    border-radius: 16px ;
+    border: solid 2px white;
+    font-weight: 800;
+}
+#menu h6{
+    margin-top: 10px;
+    font-size: 12px;
+    font-weight: 500;
+    text-align: center;   
+}
+#cadastro{
+    background-color: white;
+    border-radius: 0 16px 16px 0;
+    height: 95vh;
 
 }
-.menu h6{ 
-    position: absolute;
-    width: 130px;
-    height: 18px;
-    left: 303px;
-    top: 474px;
-    font-size: 12px;
+.container{
+    display: flex;
+    flex-wrap: wrap;    
 }
-.row button{
-    position: absolute;
-    align-items: center;
-    width: 181.24px;
-    height: 65.27px;
-    left: 808px;
-    top: 617px;
-    font-weight: 800;
+#titulo h2{
+    text-align: center;
+    font-weight:900;
+    font-size: 24px;
+    color:#23226B;
+    margin-top: 38px;
+}
+#sub-titulo h4{
+    margin-top: 35px;
+    font-weight: 500;
     font-size: 14px;
-    border-radius: 16px;
-    background-color: #23226B;
-    color: white;
-    border: none;
+    line-height: 23px;
+    color:#7C7C7C;
 }
+.mdi-account{
+    font-size: 18px;
+    padding: 2px;
+    color:#7C7C7C;
+}
+.mdi-map-marker{
+    font-size: 18px;
+    padding: 2px;
+    color:#7C7C7C;
+
+}
+.form-label{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 12px;
+    color:#7C7C7C;
+    
+}
+.container input {
+    height: 30px;
+    background: #EAEAEA;
+    
+
+}
+#cadastro #btn-cadastrar{
+    font-weight: 800;
+    margin-top: 24px;
+    width: 170px;
+    height: 60px;
+    color: white;
+    background-color: #23226B;
+    border-radius: 16px ;
+    border: none;
+    margin-left: 34%;
+}
+.form-check-label{
+    font-size: 12px;
+    margin-top: 11px;
+}
+
+
