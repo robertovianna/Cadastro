@@ -11,13 +11,15 @@
     <title>Cadastro</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@6.9.96/css/materialdesignicons.min.css">
+    <script src="//code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.js"></script>
 </head>
 
 <body>
     <header class="fundo">
-        <div id="card" class="col-md-10 col-sm-12">
+        <div id="card" class="col-md-10 col-sm-10">
 
-            <div id="card-bem-vindo" class="col-md-3 col-sm-12">
+            <div id="card-bem-vindo" class="col-md-3 col-sm-10">
                 <div id="menu">
                     <h1>BEM-VINDO DE VOLTA</h1>
                     <h4>Acesse sua conta agora mesmo</h4>
@@ -26,69 +28,75 @@
                 </div>
             </div>
 
-            <div id="cadastro" class="col-md-7 col-sm-12">
+            <form id="cadastro" class="col-md-7 col-sm-10">
 
-                <form class="container">
+                <div class="container">
                     <div class="col-md-12" id="titulo">
                         <h2>CRIE SUA CONTA</h2>
                     </div>
                     <div class="col-md-12" id="sub-titulo">
                         <h4> <i class=" mdi mdi-account"></i>Informações Pessoais</h4>
                     </div>
+
                     <div class="col-md-6">
                         <label for="text" class="form-label">Nome</label>
-                        <input type="text" class="form-control" id="text" required>
+                        <input type="text" class="form-control required" id="text" oninput="nameValidate()">
+                        <span class="span-required" >O nome deve ter no mínimo 5 caracteres</span>
                     </div>
                     <div class="col-md-6">
                         <label for="inputEmail4" class="form-label">Email</label>
-                        <input type="email" class="form-control" id="inputEmail4" placeholder="exemplo@gmail.com">
+                        <input type="email" class="form-control required" placeholder="exemplo@gmail.com" oninput="emailValidate()">
+                        <span class="span-required">Digite um e-mail válido</span>
                     </div>
                     <div class="col-md-6">
                         <label for="tel" class="form-label">Telefone</label>
-                        <input type="tel" class="form-control" id="tel">
+                        <input type="tel" class="form-control required" id="tel" placeholder="(XX) XXXXX-XXXX" oninput="numberValidate()">
+                        <span class="span-required">Digite um número de telefone válido</span>
                     </div>
                     <div class="col-md-6">
                         <label for="inputPassword4" class="form-label">Senha</label>
-                        <input type="password" class="form-control" id="inputPassword4">
+                        <input type="password" class="form-control required" id="inputPassword4" oninput="mainPasswordValidate()">
+                        <span class="span-required">A senha deve ter no mínimo 8 caracteres</span>
                     </div>
                     <div class="col-md-12" id="sub-titulo">
                         <h4> <i class=" mdi mdi-map-marker "></i>Endereço</h4>
                     </div>
-                    <div class="col-12">
-                        <label for="inputAddress" class="form-label">Cep</label>
-                        <input type="number" class="form-control" id="number">
+                    <div class="col-5">
+                        <label class="form-label">Cep</label>
+                        <input id="cep" type="text" class="form-control required" oninput="cepValidate()">
+                        <span class="span-required">Digite um cep válido</span>
                     </div>
                     <div class="col-9">
                         <label for="inputAddress2" class="form-label">Logradouro</label>
-                        <input type="text" class="form-control" id="inputAddress2">
+                        <input type="text" class="form-control required" id="inputAddress2">
                     </div>
                     <div class="col-md-3">
                         <label for="inputCity" class="form-label">Numero</label>
-                        <input type="number" class="form-control" id="inputCity">
+                        <input type="number" class="form-control required" id="inputCity">
                     </div>
                     <div class="col-md-5">
                         <label for="inputState" class="form-label">Bairro</label>
-                        <input type="text" class="form-control" id="inputAddress2">
+                        <input type="text" class="form-control required" id="inputAddress2">
                     </div>
                     <div class="col-md-4">
                         <label for="inputState" class="form-label">Estado</label>
-                        <input type="text" class="form-control" id="inputAddress2">
+                        <input type="text" class="form-control required" id="inputAddress2">
                     </div>
                     <div class="col-md-3">
                         <label for="inputZip" class="form-label">Cidade</label>
-                        <input type="text" class="form-control" id="inputZip">
+                        <input type="text" class="form-control required" id="inputZip">
                     </div>
-                    <div class="col-12">
+                    <div class="col-md-12">
                         <div class="form-check">
                             <input class="form-check-input" type="checkbox" id="gridCheck">
                             <label class="form-check-label" for="gridCheck">Li e aceito os termos </label>
                         </div>
                     </div>
                     <div class="col-12">
-                        <button type="submit" class="btn btn-primary" id="btn-cadastrar">CADASTRAR</button>
+                        <button type="submit" class="btn-cadastrar">CADASTRAR</button>
                     </div>
-                </form>
-            </div>
+                </div>
+            </form>
         </div>
     </header>
 

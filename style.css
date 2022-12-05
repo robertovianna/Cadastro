@@ -71,22 +71,16 @@
     margin-top: 38px;
 }
 #sub-titulo h4{
-    margin-top: 35px;
+    margin-top: 24px;
     font-weight: 500;
     font-size: 14px;
     line-height: 23px;
     color:#7C7C7C;
 }
-.mdi-account{
+.mdi-account, .mdi-map-marker{
     font-size: 18px;
     padding: 2px;
     color:#7C7C7C;
-}
-.mdi-map-marker{
-    font-size: 18px;
-    padding: 2px;
-    color:#7C7C7C;
-
 }
 .form-label{
     font-weight: 500;
@@ -96,12 +90,18 @@
     
 }
 .container input {
-    height: 30px;
+    height: 28px;
     background: #EAEAEA;
     
+}
+.span-required{
+    display: none;
+    font-size: 11px;
+    margin: 1px 0 0 1px;
+    color: #e63636;
 
 }
-#cadastro #btn-cadastrar{
+#cadastro .btn-cadastrar{
     font-weight: 800;
     margin-top: 24px;
     width: 170px;
@@ -110,11 +110,14 @@
     background-color: #23226B;
     border-radius: 16px ;
     border: none;
-    margin-left: 34%;
+   
 }
 .form-check-label{
     font-size: 12px;
     margin-top: 11px;
+}
+.col-12{
+    text-align: center;
 }
 
 
