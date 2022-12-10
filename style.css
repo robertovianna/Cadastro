@@ -68,10 +68,10 @@
     font-weight:900;
     font-size: 24px;
     color:#23226B;
-    margin-top: 38px;
+    margin-top: 28px;
 }
 #sub-titulo h4{
-    margin-top: 24px;
+    margin-top: 20px;
     font-weight: 500;
     font-size: 14px;
     line-height: 23px;
@@ -103,7 +103,6 @@
 }
 #cadastro .btn-cadastrar{
     font-weight: 800;
-    margin-top: 24px;
     width: 170px;
     height: 60px;
     color: white;
